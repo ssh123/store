@@ -1,7 +1,7 @@
 Store::Application.routes.draw do
-  get "materials/index"
 
-  get "materials/show"
+  root :to => "materials#index"
+  resources :materials
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

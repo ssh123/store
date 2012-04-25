@@ -1,4 +1,7 @@
 class Material
   include Mongoid::Document
-  include:Mongoid::
+  include Mongoid::Timestamps::Created
+
+  field :name, type: String
+
 end
