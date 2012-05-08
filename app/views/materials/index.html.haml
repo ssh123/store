@@ -1,2 +1,30 @@
-%h1 Materials#index
-%p Find me in app/views/materials/index.html.haml
+.row-fluid
+  .hero-unit
+    %ul.thumbnails
+      %li.span12
+        .thumbnail
+          %a{:href => "#",:class => "thumbnail"}
+            %img{:src=>"assets/hero.jpg"}
+          .caption
+            %h5 Label
+            %p
+              this is a desc
+            %p
+              %a{:href => "#",:class => "btn btn-primary"} Buy
+              %a{:href => "#",:class =>"btn"} Test
+
+%ul.thumbnails
+
+- 1.step(10) do
+  %li.span3{:style => "margin-bottom:10px"}
+    .thumbnail
+      %a{:href => "#",:class => "thumbnail"}
+        %img{:src=>"assets/1223482_220x360.jpg"}
+      .caption
+        %h5 Label
+        %p
+          this is a desc
+        %p
+          %a{:href => "#",:class => "btn btn-primary"} Buy
+          %a{:href => "#",:class =>"btn"} Test
+

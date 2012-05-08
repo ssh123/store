@@ -12,4 +12,8 @@
 //
 //= require jquery-1.7.2.min
 //= require jquery_ujs
+//= require jquery.chosen
+//= require underscore-min
+//= require backbone-min
+//= require bootstrap.min
 //= require_tree .
