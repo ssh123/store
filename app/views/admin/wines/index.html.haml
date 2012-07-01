@@ -1,0 +1,22 @@
+%h1 Listing admin_wines
+
+%table.table-bordered
+  %tr
+    %th 名称
+    %th 描述
+    %th 操作
+    %th
+    %th
+
+  - @admin_wines.each do |admin_wine|
+    %tr
+      %td= admin_wine.name
+      %td= admin_wine.description
+
+      %td= link_to 'Show', admin_wine
+      %td= link_to 'Edit', edit_admin_wine_path(admin_wine)
+      %td= link_to 'Destroy', admin_wine, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Wine', new_admin_wine_path

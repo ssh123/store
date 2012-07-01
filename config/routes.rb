@@ -1,7 +1,11 @@
 Store::Application.routes.draw do
 
-  root :to => "materials#index"
-  resources :materials
+  namespace :admin do resources :wines end
+
+  devise_for :users
+
+  root :to => "wines#index"
+  resources :wines
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe "wines/show.html.haml" do
+describe User do
   pending "add some examples to (or delete) #{__FILE__}"
 end

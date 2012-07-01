@@ -1,0 +1,27 @@
+= simple_form_for @admin_wine ,:as =>'admin_wine',:url=> @admin_wine.persisted? ? admin_wine_path(@admin_wine) : admin_wines_path ,:html =>{:class => 'form-horizontal',:id => 'new_wine'} do |f|
+  -if @admin_wine.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@admin_wine.errors.count, "error")} prohibited this admin_wine from being saved:"
+      %ul
+        - @admin_wine.errors.full_messages.each do |msg|
+          %li= msg
+  .form-stacked
+
+    %fieldset
+      .row
+        .span6
+          = f.input :name ,:wrapper_html => {:class =>'input-xlarge'}
+          = f.input :nick_name ,:wrapper_html => {:class =>'input-xlarge'}
+          = f.input :description ,:as => :text,:wrapper_html => {:class =>'input-xlarge'}
+          = f.input :nick_name ,:wrapper_html => {:class =>'input-xlarge'}
+          = f.input :market_price ,:wrapper_html => {:class =>'input-xlarge'}
+          = f.input :price ,:wrapper_html => {:class =>'input-xlarge'}
+          = f.input :promotion_price ,:wrapper_html => {:class =>'input-xlarge'}
+          = f.input :alcohol ,:wrapper_html => {:class =>'input-xlarge'}
+          = f.input :nick_name ,:wrapper_html => {:class =>'input-xlarge'}
+          = f.input :nick_name ,:wrapper_html => {:class =>'input-xlarge'}
+          = f.input :nick_name ,:wrapper_html => {:class =>'input-xlarge'}
+          = f.input :nick_name ,:wrapper_html => {:class =>'input-xlarge'}
+
+  .actions
+    = f.submit 'Save'

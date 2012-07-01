@@ -26,6 +26,11 @@ gem 'will_paginate'
 gem 'thin'
 gem 'bson_ext'
 gem 'compass'
+gem 'devise'
+gem 'canard'
+gem 'cancan'
+gem 'fabrication'
+gem 'simple_form'
 
 
 # To use ActiveModel has_secure_password
@@ -49,5 +54,6 @@ group :test,:development do
   gem 'guard-spork'
   gem 'guard-livereload'
   gem 'pry'
+  gem 'rails_best_practices'
 
 end
